@@ -7,13 +7,92 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/css/">
-    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <title>Forest Group</title>
 </head>
 
 <body>
 
-    <script src="./dist/js/"></script>
+    <nav class="nav nav-mobile">
+        <button class="burger-btn">
+            <div class="burger-btn__box">
+                <div class="burger-btn__bars"></div>
+            </div>
+        </button>
+
+        <div class="nav-mobile__box">
+            <button class="nav-mobile__box-close-btn">
+                <img src="./dist/img/icons/x-bold.svg" alt="przycisk zamykający nawigacje">
+            </button>
+
+            <div class="nav-mobile__links">
+                <a class="link" href="#home">Home</a>
+                <a class="link" href="#about-us">O nas</a>
+                <a class="link" href="#offers">Oferta</a>
+                <a class="link" href="#contact">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="nav nav-desktop">
+        <div class="wrapper">
+            <div class="nav-desktop__logo">
+                <a href="#home">
+                    <img src="./dist/img/icons/tree-fill.svg" alt="Fores Group logo" class="nav-desktop__logo-icon">
+                    <span class="nav-desktop__logo-span">Forest</span>
+                </a>
+            </div>
+
+            <div class="nav-desktop__links">
+                <a href="#home" class="link">Home</a><a href="#about-us" class="link">O nas</a><a href="#offers"
+                    class="link">Oferta</a><a href="#contact" class="link">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header" id="home">
+        <div class="header__img"></div>
+
+        <div class="wrapper">
+            <div class="header__text">
+                <h2 class="title">Forest Group</h2>
+                <h1 class="descripton">Największy park w Twojej Okolicy!</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="section-padding about-us" id="about-us">
+            <h2 class="section-heading">O nas</h2>
+
+            <div class="wrapper">
+                <div class="about-us__container">
+                    <img src="./dist/img/about-us-lg.jpg" alt="" class="about-us__img">
+
+                    <div class="about-us__text">
+                        <h3 class="title">Niezapomniene przygody</h3>
+                        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque sapiente
+                            laudantium ipsa
+                            modi non sequi quia suscipit omnis ut facere a consectetur fugiat, laboriosam reprehenderit
+                            aspernatur rem aliquid rerum pariatur.Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Doloremque sapiente
+                            laudantium ipsa
+                            modi non sequi quia suscipit omnis ut facere a consectetur fugiat, laboriosam reprehenderit
+                            aspernatur rem aliquid rerum pariatur.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="test"></div>
+
+
+
+    <script src="./dist/js/main.min.js"></script>
 </body>
 
 </html>

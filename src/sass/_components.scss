@@ -3,3 +3,40 @@
 	width: 100%;
 	max-width: 1200px;
 }
+
+.section-heading {
+	font-size: 3rem;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+// to do:
+
+// .btn-special-animation {
+
+// }
+
+.section-padding {
+	padding: 6em 2em;
+}
+
+@media(min-width: 768px) {
+    .section-heading {
+        font-size: 3.6rem;
+    }
+
+    .section-padding {
+        padding: 8em 2em;
+    }
+}
+
+@media(min-width: 992px) {
+    .section-heading {
+        font-size: 4.8rem;
+    }
+
+    .section-padding {
+        padding: 10em 2em;
+    }
+}

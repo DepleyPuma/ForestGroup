@@ -1,0 +1,11 @@
+@use './colors';
+
+@mixin burgerBtn {
+	position: absolute;
+	right: 0;
+	height: 4px;
+	content: '';
+	background-color: colors.$black;
+    border-radius: 50px;
+	transition: width 0.3s;
+}
