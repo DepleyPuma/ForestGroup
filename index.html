@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./dist/img/icons/tree-fill.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
@@ -50,7 +51,7 @@
         </div>
     </nav>
 
-    <header class="header" id="home">
+    <header class="header section" id="home">
         <div class="header__img"></div>
 
         <div class="wrapper">
@@ -63,32 +64,31 @@
 
     <main class="main">
 
-        <section class="section-padding about-us" id="about-us">
+        <section class="section-padding about-us section black-section" id="about-us">
             <h2 class="section-heading">O nas</h2>
 
             <!-- i think that this wrapper is not needed  -->
             <!-- <div class="wrapper"> -->
-                <div class="about-us__container">
-                    <img src="./dist/img/about-us-lg.jpg" alt="" class="about-us__img">
+            <div class="about-us__container">
+                <img src="./dist/img/about-us-lg.jpg" alt="" class="about-us__img">
 
-                    <div class="about-us__text">
-                        <h3 class="title">Niezapomniene przygody</h3>
-                        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque sapiente
-                            laudantium ipsa
-                            modi non sequi quia suscipit omnis ut facere a consectetur fugiat, laboriosam reprehenderit
-                            aspernatur rem aliquid rerum pariatur.Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Doloremque sapiente
-                            laudantium ipsa
-                            modi non sequi quia suscipit omnis ut facere a consectetur fugiat, laboriosam reprehenderit
-                            aspernatur rem aliquid rerum pariatur.</p>
-                    </div>
+                <div class="about-us__text">
+                    <h3 class="title">Niezapomniene przygody</h3>
+                    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque sapiente
+                        laudantium ipsa
+                        modi non sequi quia suscipit omnis ut facere a consectetur fugiat, laboriosam reprehenderit
+                        aspernatur rem aliquid rerum pariatur.Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Doloremque sapiente
+                        laudantium ipsa
+                        modi non sequi quia suscipit omnis ut facere a consectetur fugiat, laboriosam reprehenderit
+                        aspernatur rem aliquid rerum pariatur.</p>
                 </div>
+            </div>
             <!-- </div> -->
         </section>
 
-        <section class="kid">
+        <section class="kid section">
             <div class="kid__img">
-                <!-- <img src="./dist/img/kid-lg.jpg" alt="" class="kid__img"> -->
             </div>
 
             <div class="kid__text">
@@ -96,9 +96,114 @@
             </div>
         </section>
 
+        <section class="section offers section-padding black-section" id="offers">
+
+            <h2 class="section-heading">Oferta</h2>
+
+            <h3 class="offers__header"> Wybierz jedną z naszych wspaniałych ofert!</h3>
+
+            <div class="offers__cards">
+
+                <div class="card">
+                    <h3 class="card__header">Demo</h3>
+                    <p class="card__price">$0</p>
+
+                    <div class="card__info">
+                        <ul class="card__list">
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/round-check.svg" alt="check" class="icon"> opcja
+                                w pakiecie
+                            </li>
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/round-check.svg" alt="check" class="icon">
+                                opcja w pakiecie
+                            </li>
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/minus-20-solid.svg" alt="check" class="icon">
+                                opcaj poza pakietem
+                            </li>
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/minus-20-solid.svg" alt="check" class="icon">
+                                opcaj poza pakietem
+                            </li>
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/minus-20-solid.svg" alt="check" class="icon">
+                                opcaj poza pakietem
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="card__btn">Wybierz</button>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__header">Standard</h3>
+                    <p class="card__price">$99</p>
+
+                    <div class="card__info">
+                        <ul class="card__list">
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/round-check.svg" alt="check" class="icon"> opcja
+                                w pakiecie
+                            </li>
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/round-check.svg" alt="check" class="icon">
+                                opcja w pakiecie
+                            </li>
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/round-check.svg" alt="check" class="icon"> opcja
+                                w pakiecie
+                            </li>
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/minus-20-solid.svg" alt="check" class="icon">
+                                opcaj poza pakietem
+                            </li>
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/minus-20-solid.svg" alt="check" class="icon">
+                                opcaj poza pakietem
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="card__btn active">Wybierz</button>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__header">Premium</h3>
+                    <p class="card__price">$299</p>
+
+                    <div class="card__info">
+                        <ul class="card__list">
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/round-check.svg" alt="check" class="icon"> opcja
+                                w pakiecie
+                            </li>
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/round-check.svg" alt="check" class="icon">
+                                opcja w pakiecie
+                            </li>
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/round-check.svg" alt="check" class="icon"> opcja
+                                w pakiecie
+                            </li>
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/round-check.svg" alt="check" class="icon"> opcja
+                                w pakiecie
+                            </li>
+                            <li class="card__list--item">
+                                <img src="./dist/img/icons/round-check.svg" alt="check" class="icon"> opcja
+                                w pakiecie
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="card__btn">Wybierz</button>
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <div class="test"></div>
+    <div class="test section black-section"></div>
 
 
 
