@@ -151,11 +151,12 @@ body {
 
 	&__img {
 		height: 100%;
-		width: clamp(200px, 50vw, 50%);
+		width: clamp(200px, 35vw, 50%);
 	}
 
 	&__text {
 		margin-left: 4em;
+		width: 35%;
 
 		.title {
 			font-size: 4rem;
@@ -203,6 +204,85 @@ body {
 	}
 }
 
+// OFFERS
+.offers {
+	&__header {
+		margin-top: 2.5em;
+		font-weight: 300;
+		font-size: 3rem;
+		text-align: center;
+	}
+
+	&__cards {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		margin-top: 6em;
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			padding: 4em;
+			width: 30%;
+			text-align: center;
+			border-radius: 8px;
+			box-shadow: 0 0 10px colors.$light-gray;
+
+			&__header {
+				font-size: 2.6rem;
+			}
+
+			&__price {
+				margin: 1em 0;
+				font-size: 2.2rem;
+				font-weight: bold;
+			}
+
+			&__list {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				list-style: none;
+
+				&--item {
+					margin: 0.5em;
+					font-size: 1.6rem;
+
+					.icon {
+						margin-right: 5px;
+						margin-bottom: -5px;
+						width: 20px;
+					}
+				}
+			}
+
+			&__btn {
+				margin-top: 2em;
+				padding: 1em 4em;
+				background: none;
+				border: none;
+				border-radius: 12px;
+				box-shadow: 0 0 10px colors.$light-gray;
+				cursor: pointer;
+				transition: color 0.4s, background-color 0.4s;
+
+				&:hover {
+					background-color: colors.$green;
+					box-shadow: 0 0 10px colors.$green;
+				}
+			}
+
+			.active {
+				background-color: colors.$green;
+				box-shadow: 0 0 10px colors.$green;
+			}
+		}
+	}
+}
+
 .test {
 	height: 200vh;
 	// background-color: tomato;
@@ -217,6 +297,35 @@ body {
 	.kid {
 		&__text {
 			padding: 4em 8em;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+	.about-us {
+		&__img {
+			width: clamp(200px, 45vw, 80%);
+		}
+	}
+
+	.offers {
+		&__cards {
+			.card {
+				padding: 2em;
+				min-height: 400px;
+				max-height: 400px;
+
+				&__price {
+					margin: 0.5em;
+				}
+
+				&__list {
+					&--item {
+						// maby bigger font-size
+						font-size: 1.1rem;
+					}
+				}
+			}
 		}
 	}
 }
@@ -253,6 +362,13 @@ body {
 			&__bars::after,
 			&__bars::before {
 				@include mixins.burgerBtn;
+				background-color: colors.$pure-white;
+			}
+
+			.black-bars,
+			.black-bars::after,
+			.black-bars::before {
+				background-color: #000;
 			}
 
 			&__bars {
@@ -347,7 +463,7 @@ body {
 
 		&__text {
 			margin: 0;
-			max-width: 80%;
+			min-width: 80%;
 
 			.title {
 				margin-bottom: 1em;
@@ -370,6 +486,32 @@ body {
 
 			p {
 				font-size: 3rem;
+			}
+		}
+	}
+
+	// OFFERS
+	.offers {
+		&__cards {
+			flex-direction: column;
+			margin-top: 2em;
+
+			.card {
+				padding: 2em;
+				margin: 3em 0;
+				min-height: 200px;
+				min-width: 280px;
+
+				&__price {
+					margin: 1em;
+					// font-size: 3rem;
+				}
+
+				&__list {
+					&--item {
+						font-size: 1.4rem;
+					}
+				}
 			}
 		}
 	}
