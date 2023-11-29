@@ -172,6 +172,7 @@ body {
 
 .kid {
 	position: relative;
+	
 	&__img {
 		position: relative;
 		min-height: 350px;
@@ -448,7 +449,6 @@ body {
 		padding: 3em 0;
 
 		&__container {
-			display: flex;
 			flex-direction: column;
 			margin-top: 3em;
 		}
