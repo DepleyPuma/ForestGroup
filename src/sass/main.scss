@@ -207,7 +207,7 @@ body {
 // OFFERS
 .offers {
 	&__header {
-		margin-top: 2.5em;
+		margin-top: 2em;
 		font-weight: 300;
 		font-size: 3rem;
 		text-align: center;
@@ -313,10 +313,6 @@ body {
 		&__cards {
 			.card {
 				padding: 2em;
-
-				&__price {
-					margin: 0.5em;
-				}
 
 				&__list {
 					&--item {
@@ -495,16 +491,11 @@ body {
 	.offers {
 		&__cards {
 			flex-direction: column;
-			margin-top: 2em;
+			margin-top: 3.5em;
 
 			.card {
 				padding: 2em;
-				min-height: 200px;
 				min-width: 280px;
-
-				&__price {
-					margin: 1em;
-				}
 
 				&__list {
 					&--item {
