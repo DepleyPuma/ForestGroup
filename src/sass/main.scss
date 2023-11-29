@@ -25,15 +25,15 @@ body {
 }
 
 //  NAV
-.nav-mobile {
-	display: none;
-}
-
 .nav {
 	display: block;
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
+}
+
+.nav-mobile {
+	display: none;
 }
 
 .nav-desktop {
@@ -218,6 +218,7 @@ body {
 		justify-content: space-evenly;
 		align-items: center;
 		margin-top: 6em;
+		gap: 3em;
 
 		.card {
 			display: flex;
@@ -225,7 +226,7 @@ body {
 			justify-content: space-between;
 			align-items: center;
 			padding: 4em;
-			width: 30%;
+			width: clamp(280px, 30vw, 400px);
 			text-align: center;
 			border-radius: 8px;
 			box-shadow: 0 0 10px colors.$light-gray;
@@ -312,8 +313,6 @@ body {
 		&__cards {
 			.card {
 				padding: 2em;
-				min-height: 400px;
-				max-height: 400px;
 
 				&__price {
 					margin: 0.5em;
@@ -336,7 +335,9 @@ body {
 	}
 
 	.nav-mobile {
+		display: block;
 		height: 0;
+
 		.burger-btn {
 			position: fixed;
 			top: 20px;
@@ -498,13 +499,11 @@ body {
 
 			.card {
 				padding: 2em;
-				margin: 3em 0;
 				min-height: 200px;
 				min-width: 280px;
 
 				&__price {
 					margin: 1em;
-					// font-size: 3rem;
 				}
 
 				&__list {
