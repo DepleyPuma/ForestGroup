@@ -4,6 +4,7 @@ const mobileNavCloseBtn = document.querySelector('.nav-mobile__box-close-btn');
 const mobileNavLinks = document.querySelectorAll('.link');
 const allSections = document.querySelectorAll('.section');
 const navBtnBars = document.querySelector('.burger-btn__bars');
+const footerYear = document.querySelector('.year');
 
 const closeNav = () => {
 	mobileNav.classList.remove('active');
@@ -33,6 +34,14 @@ const handleObserver = () => {
 	});
 };
 
+const currentYear = () => {
+	const currentDate = new Date();
+	const currentYear = currentDate.getFullYear();
+
+	footerYear.textContent = currentYear;
+}
+
 mobileNavBurgerBtn.addEventListener('click', showNav);
 mobileNavCloseBtn.addEventListener('click', closeNav);
 window.addEventListener('scroll', handleObserver);
+currentYear();
