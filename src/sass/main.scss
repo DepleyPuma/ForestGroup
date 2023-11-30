@@ -172,7 +172,7 @@ body {
 
 .kid {
 	position: relative;
-	
+
 	&__img {
 		position: relative;
 		min-height: 350px;
@@ -283,12 +283,82 @@ body {
 			}
 		}
 	}
+
+	&__text {
+		margin-top: 1em;
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: colors.$green;
+	}
 }
 
 .test {
 	height: 200vh;
 	// background-color: tomato;
 	// background-image: url('../img/nav-img-sm.jpg');
+}
+
+// FOOTER
+.footer {
+	padding-top: 4em;
+	background-color: #f1f1f1;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-around;
+		align-items: center; //maby comment this line
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 90px;
+			height: 90px;
+		}
+
+		span {
+			margin-left: 0.5em;
+			font-size: 3.6rem;
+		}
+	}
+
+	&__info {
+		display: flex;
+		justify-content: center;
+		gap: 4em;
+
+		.column {
+			&__title {
+				font-size: 2.4rem;
+			}
+
+			&__list {
+				list-style: none;
+				font-weight: 300;
+
+				&--item {
+					margin: 1em 0;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	hr {
+		margin: 4em 0;
+	}
+
+	&__text {
+		padding-bottom: 2em;
+		text-align: center;
+	}
 }
 
 // ======================
