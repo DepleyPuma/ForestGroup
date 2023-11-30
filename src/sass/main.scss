@@ -43,7 +43,6 @@ body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		// padding: 1.5em;
 	}
 
 	.nav-desktop__logo {
@@ -296,12 +295,6 @@ body {
 	}
 }
 
-.test {
-	height: 200vh;
-	// background-color: tomato;
-	// background-image: url('../img/nav-img-sm.jpg');
-}
-
 // FOOTER
 .footer {
 	padding-top: 4em;
@@ -310,7 +303,6 @@ body {
 	.wrapper {
 		display: flex;
 		justify-content: space-around;
-		align-items: center; //maby comment this line
 	}
 
 	&__logo {
@@ -321,6 +313,7 @@ body {
 		img {
 			width: 90px;
 			height: 90px;
+			cursor: pointer;
 		}
 
 		span {
@@ -387,7 +380,6 @@ body {
 
 				&__list {
 					&--item {
-						// maby bigger font-size
 						font-size: 1.1rem;
 					}
 				}
@@ -457,7 +449,6 @@ body {
 		&__box {
 			position: relative;
 			height: 100vh;
-			// background-color: pink;
 			transform: translateX(100%);
 			transition: transform 0.5s;
 
@@ -573,6 +564,36 @@ body {
 					}
 				}
 			}
+		}
+
+		&__text {
+			line-height: 30px;
+		}
+	}
+
+	// FOOTER
+	.footer {
+		.wrapper,
+		&__logo,
+		&__info {
+			flex-direction: column;
+			text-align: center;
+		}
+
+		&__logo {
+			img {
+				width: 64px;
+				height: 64px;
+			}
+
+			span {
+				margin: 0;
+			}
+		}
+
+		&__info {
+			margin-top: 2em;
+			gap: 2em;
 		}
 	}
 }
