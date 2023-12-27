@@ -16,9 +16,7 @@
 
     <nav class="nav nav-mobile">
         <button class="burger-btn" aria-label="Menu">
-            <div class="burger-btn__box">
-                <div class="burger-btn__bars"></div>
-            </div>
+            <span class="burger-btn__bars"></span>
         </button>
 
         <div class="nav-mobile__box">
@@ -26,12 +24,12 @@
                 <img src="./dist/img/icons/x-bold.svg" alt="przycisk zamykający nawigacje">
             </button>
 
-            <div class="nav-mobile__links">
-                <a class="link" href="#home">Home</a>
-                <a class="link" href="#about-us">O nas</a>
-                <a class="link" href="#offers">Oferta</a>
-                <a class="link" href="./contact.html">Kontakt</a>
-            </div>
+            <ul class="nav-mobile__links">
+                <li><a class="link" href="#home">Home</a></li>
+                <li><a class="link" href="#about-us">O nas</a></li>
+                <li><a class="link" href="#offers">Oferta</a></li>
+                <li><a class="link" href="./contact.html">Kontakt</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -56,8 +54,8 @@
 
         <div class="wrapper">
             <div class="header__text">
-                <h2 class="title">Forest Group</h2>
-                <h1 class="descripton">Największy park w Twojej Okolicy!</h1>
+                <h1 class="title">Forest Group</h1>
+                <h2 class="descripton">Największy park w Twojej Okolicy!</h2>
             </div>
         </div>
     </header>
@@ -128,7 +126,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="card__btn">Wybierz</button>
+                    <button class="card__btn" aria-label="wybierz opcje">Wybierz</button>
                 </div>
 
                 <div class="card">
@@ -159,7 +157,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="card__btn active">Wybierz</button>
+                    <button class="card__btn  aria-labelactive">Wybierz</button>
                 </div>
 
                 <div class="card">
@@ -190,7 +188,7 @@
                             </li>
                         </ul>
                     </div>
-                    <button class="card__btn">Wybierz</button>
+                    <button class="card__btn" aria-label>Wybierz</button>
                 </div>
 
             </div>
